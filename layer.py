@@ -33,10 +33,10 @@ class EchoLayer(YowInterfaceLayer):
                     message = "Invalid Command. Please type #info"
 
                     if inputMessage == "#suggest" or inputMessage == "#s":
-                      message=""
-                      temp=extracteproduct.getUrl(mobnum)
+                        message=""
+                        temp=extracteproduct.getUrl(mobnum)
                         for i in temp:
-                          message+=i[1]+"\n\n"
+                            message+=i[1]+"\n\n"
 
                     elif inputMessage == "#trending" or inputMessage == "#t":
                       message="Please send your location"
